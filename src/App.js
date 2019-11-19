@@ -108,13 +108,11 @@ class App extends Component {
   }
   getTitle() {
     const wordData = this.state.movieData[this.state.currentList].name
-    let wrdData = wordData.split('').filter((item) => {
+    return wordData.split('').filter((item) => {
       if(this.letters.test(item) || item === ' '){
         return item
       }
-    }).join('')
-
-    return wrdData
+    }).join('')    
   }
 
   render() {

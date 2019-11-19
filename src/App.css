@@ -1,11 +1,111 @@
-.App {
-  text-align: center;
+
+ul {
+  margin: 0
+}
+
+li{
+  list-style-type: none
+}
+
+.hangmanApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fontW800 {
+  font-weight: 800
+}
+.diagram {
+    width: 295px;
+    height: 295px;
+    opacity: 1;
+    background-size: 100%;
+    display: block;
+    margin: 0 15px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.flex {
+  display: flex;
+}
+.block {
+  display: block;
+}
+.none {
+  display: none;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.pad10 {
+  padding: 10px
+}
+[data-diagramId='1'] {
+  background-image: url('./img/hangman1.png');
+}
+[data-diagramId='2'] {
+  background-image: url('./img/hangman2.png');
+}
+[data-diagramId='3'] {
+  background-image: url('./img/hangman3.png');
+}
+[data-diagramId='4'] {
+  background-image: url('./img/hangman4.png');
+}
+[data-diagramId='5'] {
+  background-image: url('./img/hangman5.png');
+}
+[data-diagramId='6'] {
+  background-image: url('./img/hangman6.png');
+}
+[data-diagramId='7'] {
+  background-image: url('./img/hangman7.png');
 }
 
 .App-logo {
   height: 40vmin;
 }
-
+.icon-reset::after{
+  content: '';
+  width: 36px;
+  height: 36px;
+  background-image: url('./img/icons8-reset-50.png');
+  background-size: 100%;
+  position:absolute;
+}
+.title-letter {
+    border-bottom: 1px solid #666;
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 26px;
+}
+.cursor{
+  cursor:pointer;
+}
+button {
+  padding: 0px
+}
+.visible {
+  visibility: visible;
+}
+.hidden{
+  visibility: hidden;
+}
+.disable {
+  pointer-events: none;
+  color: #cdcdcd
+}
+.active{
+  pointer-events: auto;
+  color: #333333;
+}
+.mr-l52{
+  margin-left: 52px
+}
+[data-missed=true] {
+  color:red
+}
+/*
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -19,4 +119,4 @@
 
 .App-link {
   color: #09d3ac;
-}
+} */

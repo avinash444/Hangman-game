@@ -1,7 +1,6 @@
 import React from 'react'
 
 const GameOver = ({newGame,text,resetGame}) => {
-  debugger;
   return (
     <div>
     <div className={text === 'loose' ? 'flex' : 'none'}>

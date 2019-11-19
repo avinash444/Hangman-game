@@ -108,11 +108,13 @@ class App extends Component {
   }
   getTitle() {
     const wordData = this.state.movieData[this.state.currentList].name
-    return wordData.split('').filter((item) => {
+    let wrdData = wordData.split('').filter((item) => {
       if(this.letters.test(item) || item === ' '){
         return item
       }
     }).join('')
+
+    return wrdData
   }
 
   render() {
@@ -123,6 +125,7 @@ class App extends Component {
           </div>
       )
     }
+
     return (
       <div className="hangmanApp">
         <GameWin
@@ -142,7 +145,7 @@ class App extends Component {
         />
         <Title
           guesses={this.state.guesses}
-          words={this.getTitle()}
+          content={this.getTitle()}
           missedLetters={this.state.missedLetters}
         ></Title>
       <Digits

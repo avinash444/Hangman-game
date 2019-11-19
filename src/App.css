@@ -19,9 +19,10 @@ li{
     width: 295px;
     height: 295px;
     opacity: 1;
-    background-size: 100%;
+    background: url('./img/hangman1.png') no-repeat center center;
     display: block;
     margin: 0 15px;
+    background-size: 100%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
@@ -40,25 +41,25 @@ li{
 .pad10 {
   padding: 10px
 }
-[data-diagramId='1'] {
+[data-diagramid='1'] {
   background-image: url('./img/hangman1.png');
 }
-[data-diagramId='2'] {
+[data-diagramid='2'] {
   background-image: url('./img/hangman2.png');
 }
-[data-diagramId='3'] {
+[data-diagramid='3'] {
   background-image: url('./img/hangman3.png');
 }
-[data-diagramId='4'] {
+[data-diagramid='4'] {
   background-image: url('./img/hangman4.png');
 }
-[data-diagramId='5'] {
+[data-diagramid='5'] {
   background-image: url('./img/hangman5.png');
 }
-[data-diagramId='6'] {
+[data-diagramid='6'] {
   background-image: url('./img/hangman6.png');
 }
-[data-diagramId='7'] {
+[data-diagramid='7'] {
   background-image: url('./img/hangman7.png');
 }
 

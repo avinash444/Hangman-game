@@ -1,7 +1,8 @@
 import React  from 'react';
 
 const Title = ({content,missedLetters,guesses}) => {
-    const words = content.split(/[ ,]+/)
+    const toLower = content.toLowerCase();
+    const words = toLower.split(/[ ,]+/)
     const splitWrd = words.map((item) => item.split(""))
     const letters = splitWrd.map((word,key) => {
       return (
